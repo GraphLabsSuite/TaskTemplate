@@ -27,7 +27,7 @@ namespace DebugVariantDataGenerator
             graph.AddEdge(new DirectedEdge(graph.Vertices[5], graph.Vertices[6]));
             graph.AddEdge(new DirectedEdge(graph.Vertices[6], graph.Vertices[4]));
 
-            return GraphSerializer.Serialize(graph);
+            return VariantSerializer.Serialize(new IGraph[] { graph });
         }
 
         static void Main(string[] args)
